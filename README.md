@@ -1,4 +1,4 @@
 measuresmatter
 ==============
 
-A treatise on the proper care and feeding of RNA-seq data
+A treatise on quantification and differential expression from RNA-seq data
