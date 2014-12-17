@@ -63,3 +63,6 @@ length bias.
 - Do gene counts actually represent something meaningful? That is to say, if
   there is a statistical difference in the pileup of read counts, does this
   mean anything interesting biologically?
+
+# Recommended pipelines
+TODO...
