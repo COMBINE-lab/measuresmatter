@@ -12,6 +12,10 @@ there are no biases, what is RNA-Seq measuring and what does each read
 represent? This might help with the disconnect of why counting across genes is
 a bad idea.
 
+One *key* idea here is that the notion of a gene, in the context of RNA-seq 
+experiments, is a conceptual (and computational) convenience.  In fact, while
+it is the most prevalent such abstraction, it may not even be the most advantageous.
+
 ## Biases -- not all reads are created equal
 
 We probably don't want to go into biases too much, but should probably discuss
@@ -49,7 +53,12 @@ length bias.
         - Does taking a naive model of a gene, such as the UI model outperform
           a quantification method when the annotation is very clearly wrong or
           incomplete?
+            - If so, *why* does this happen, and can it be avoided?
         - How does a bad annotation affect "gene" expression?
+        - How should one consider the multitude of contigs produced by many de 
+          *de novo* assemblers?  Tools like [Corset](http://genomebiology.com/2014/15/7/410)
+          exist to solve problems like this but, unfortunately, still rely on counting
+          and are subject to the same theoretical and conceptual difficulties.
 
 # Differential expression
 
@@ -57,7 +66,11 @@ length bias.
   the reads came from, how would we compute "gene" expression and differential
   expression? Sum of isoform expression? A switch in relative isoform
   expression? This section might be a bit redundant with parts of the gene
-  structure section.
+  structure section. (*Note*: While many of the same caveats that apply to 
+  quantification also apply to DE, I believe that it is nonetheless important
+  for this content to have section in its own right.  While the caveats may
+  be the same, the nature of the anlayiss and the potential nature of the errors
+  may be different).
 - What does differential expression mean in other assays? What does it mean
   biologically?
 - Do gene counts actually represent something meaningful? That is to say, if
