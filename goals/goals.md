@@ -39,10 +39,19 @@ length bias.
               multimappings across genes in real experiments? Might consider
               looking at the "mappability" of regions in the genome (I think
               there is an ENCODE track for this).
+            - What is the biological interpretation of 'gene expression' using these models?
+            - What would be a natural interpretation of 'gene expression', and can we derive a model that supports that interpretation? show that it requires isoform-level abundance estimation.
         - Abundance estimation of isoforms
             - Is a gene an aggregate of isoforms? Goes back to question of what
               a is gene biologically...
             - Dealing with multimapping reads
+            - What is the biological interpretation of 'isoform expression'?
+        - What difference does the choice make? Does it matter?
+            - worked examples/simulations illustrating:
+                - what kinds of errors arise from gene vs. isoform models, under what conditions?
+                - the magnitude of the differences (e.g. how gene counting error scales with isoform [length/expression] differential)
+                - how prevalent these errors might be in real data
+        - Units of expression and how they affect interpretation.
     - Comparisons of quantification to other experiments. Might want to discuss
       what the measurement actually means in RNA-Seq compared to other
       experiments.
