@@ -27,5 +27,20 @@ We should address the following assumptions:
         - Data set: genentech data. (TODO: put a link)
     - **Action item**: write up some examples with real annotations where
       unequal coverage will bias your estimates
+    - **Action item** (*theoretical*): One of the benefits of the "isoform normalization"
+    approach (perhaps we should suggest a different name) is that the sampling, itself,
+    happens at the level of individual transcripts.  This means that it makes more sense 
+    (and is likely much more accurate) to learn bias models at the whole-transcript level
+    rather than at the intersection level.  This suggests that more effective bias 
+    correction can be done when considering entire isoforms as opposed to intersecting
+    genomic regions.
+    
+- **Information available to union-intersection vs. isoform**: The union-intersection
+  model *ignores* any information that is not unique to a particular gene.  This choice seems
+  particularly problematic in the case of overlapping genes where the isoform-based approach
+  can potentially incorporate much more information into the inference than the intersection
+  based method.  Perhaps we can highlight an analysis of some genes to explore how what
+  differences appear in this situation.
+
 - **Sequencing depth**
     - (TODO)
