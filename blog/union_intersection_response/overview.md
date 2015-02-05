@@ -17,6 +17,9 @@ This directory is dedicated to addressing those issues.
 
 We should address the following assumptions:
 
+- **The intersection is non-zero or non-trivial**: A gene can encode multiple isoforms that do not necessarily share exons. Even if they do intersect for at least part of an exon, it is quite possible that the intersection is so small that the majority of the read data for a gene, or for any transcript, is being ignored.
+  - **Action item**: measure intersection size, and its relationship to isoform length & number, in real annotations 
+
 - **Uniform coverage**: Coverage is almost never uniform in RNA-Seq. Bias is
   well known to exist. In such situations, the exonic regions one chooses can
   bias the estimate.
