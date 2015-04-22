@@ -1,13 +1,14 @@
 # Models for gene expression
 
 Currently, there are two main schools of thought when it comes to measuring
-_gene expression_: raw counts and EM counts (TODO: come up with better names).
+_gene expression_: raw counts and expected counts (Note: expected counts are
+_always_ defined with respect to some model, M).
 
 ## Raw count models
 
 In this section we will review "raw count models." Raw counts typically refer
-to _uniquely mapping_ counts across a gene. The notion of what a "gene" is
-defined several different ways, but typically refers to aggregating isoforms
+to _uniquely mapping_ counts across a gene. The notion of a "gene" is
+defined in several different ways, but typically refers to aggregating isoforms
 into one set of genomic coordinates. After aggregation, the number of reads
 which uniquely map to only this specific genomic location are referred to as
 the count of the gene, which serves as a proxy for gene expression.
