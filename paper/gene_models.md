@@ -33,7 +33,7 @@ TODO: cite a few papers using UI
 
 ### Union model
 
-The union model, implemented in HTSeq (cite) is also widely used. In this
+The union model, implemented in HTSeq [@anders2014htseq] is also widely used. In this
 model, a gene is constructed as the union of all exonic regions (Figure X).
 Note, the use of _union_ here is different than in the UI model.
 
@@ -41,3 +41,13 @@ Note, the use of _union_ here is different than in the UI model.
 
 (TODO: let's discuss original Marioni paper?)
 
+### References
+
+@article{anders2014htseq,
+  title={HTSeq--A Python framework to work with high-throughput sequencing data},
+  author={Anders, Simon and Pyl, Paul Theodor and Huber, Wolfgang},
+  journal={Bioinformatics},
+  pages={btu638},
+  year={2014},
+  publisher={Oxford Univ Press}
+}
